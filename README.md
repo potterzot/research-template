@@ -1,17 +1,14 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-Paper-Open-Source
+Research-Template
 -----------------
 
-This paper will do some economic analysis of open source, open science, and sharing economies.
+This is the github repository for my research template. I attempt to strike a balance between an R package-based template like [Ropensci's rrrpkg](http://github.com/ropensci/rrrpkg) and something like [projecttemplate](), in which any software are kept as subdirectories within the project directory. I really like the benefits of R package-based templates, but wanted more flexibility in directory structure and ease of including work in other languages. I like some of the organization of projecttemplate, but it feels like it tries to do too much for my tastes.
 
-How to use this package
------------------------
+If you'd like to cite this repository, please use the following:
 
-There are two potential ways to use this package:
+> Potter, Nicholas. "Reproducible Research Template". Github Repository. 2016. Available: <http://www.github.com/potterzot/research-template>.
 
-1.  Use it as an example of a [reproducible research]() project from which to base your own work. In that case a better alternative might be my [r-research-compendium](github.com/potterzot/r-research-compendium) package, which provides a skeleton package.
-2.  Fork the repository and do what you will with it (contributions welcome!).
-3.  Use it to access the data necessary to reproduce my findings. Example data installed with the package is in [data](data), while the full project data is available in [analysis/data](analysis/data).
-4.  Install it as an `R` package, which will provide access to the analytical functions, example data, and other aspects of the package. You can do that using `devtools` as follows:
+Approach
+--------
 
-`{r eval=FALSE      install.packages("devtools")     library("devtools")     install_github("potterzot/r-research-compendium", build_vignettes=TRUE)     library("r-research-compendium")`
+The idea behind this approach is make use of the R package development tools while also allowing some flexibility in how you organize things.
