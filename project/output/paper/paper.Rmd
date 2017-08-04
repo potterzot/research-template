@@ -1,0 +1,152 @@
+---
+title: "Agricultural Land Rents Reflect Climate Change Impacts"
+short: "Climage Change Impacts on Agriculture"
+journal: "AER" # AER, AEJ, PP, JEL
+month: "`r lubridate::month(Sys.time())`"
+year: "`r lubridate::year(Sys.time())`"
+vol: 1
+issue: 1
+jel:
+  - Q10
+  - Q54
+keywords:
+  - Climate
+  - Agriculture
+author:
+  - name: Nicholas A. Potter
+    firstname: Nicholas
+    surname: Potter
+    email: nicholas.a.potter@wsu.edu
+    affiliation: Washington State University
+    
+acknowledgements: |
+  "The author is grateful to ...""
+abstract: |
+  "Climate change affects the value of agricultural output through different mechanisms. Increases in temperature reduce yields on the right side of the temperature-yield curve. Warmer and longer growing seasons increase yields. Using a Ricardian framework in which farmers adapt to changing conditions to maximize profits, we match projected climate with the closest historical climate analogue for a latitude-longitude grid of the United States to estimate the effect of climate change on agriculture. The difference in land rents between each match is an estimate of change due to climate. Using this method, climate in 2040 will increase/reduce agricultural land rent values by XXX across the U.S., with substantial variation by county. These results support the idea that XXX and are at odds with research suggesting that XXX."
+output: rticles::aea_article
+numbersections: true
+link-citations: true
+pandocExtensions: tex_math_dollars
+bibliography: ../library.bib
+---
+
+How will changes in climate affect agricultural land rents?
+
+# Effects on Yields
+
+@LobellSchlenkerCosta-Roberts2011
+
+@GelmanPrice1999
+
+@SeifertLobell2015: Double cropping makes up for some lost production due to temperature.
+
+Attempts to estimate the economic impacts of changing climate fall into two camps. One examines agricultural yields based on expected temperatures, noting that yields increase with temperature up to a point, then decrease rapidly. If farmers are unable to switch crops or make other adjustments for a changing climate, they will be left with less productive land. @SchlenkerRoberts2009 estimate that yields will decrease between 30-46% under the slowest warming scenario and by 63-82% under the fastest warming scenario. To some extent this loss in yields may be partially offset by increased CO2 levels [@LongETAL2006].
+
+Others such as @MendelsohnNordhausShaw1994 allow farmers to adjust to climate change as they best see fit, instead using a 'Ricardian approach' that assumes well-functioning markets in which the value of yields is captured in the value of land. To use the example from MNS, as temperatures rise wheat farmers may switch to corn, and the value of their land will reflect that new use.
+
+
+@MendelsohnNordhaus1999
+
+@Darwin1999
+
+@SchlenkerHanemannFisher2006
+
+@MendelsohnETAL2000
+
+@MendelsohnSchlesingerWilliams2000
+
+@Hope2006
+
+@Tol2002a @Tol2002b
+
+@rnassqs
+
+@SSURGO
+
+@censusapi
+
+
+The Ricardian approach is appealing since it allows farmers to adapt to changing conditions, but it has its limitations. Farmers may be limited in their ability to adapt either by a lack of capital or a dearth of solutions. 
+
+At issue is not just warming temperatures and changing levels of precipitation. Climate is also expected to become more variable. Increased fluctuation in temperatures can significantly impact yields, even if average temperatures increase a few degrees. Fluctuation in precipitation may mean periods of drought followed by heavy rains, which will also affect yields.
+
+In addition to this, expectations of increased climate variability will likely negatively impact yields of a wide variety of crops.
+
+@Sekhon2011
+
+@YangShumway2015
+
+
+# Ricardian Approach
+# Land Rents 
+# Farmers Account for Climate Change in Current Land Values
+
+# American Economic Review Pointers
+
+\begin{itemize}
+\item Do not use an "Introduction" heading. Begin your introductory material
+before the first section heading.
+
+\item Avoid style markup (except sparingly for emphasis).
+
+\item Avoid using explicit vertical or horizontal space.
+
+\item Captions are short and go below figures but above tables.
+
+\item The tablenotes or figurenotes environments may be used below tables
+or figures, respectively, as demonstrated below.
+
+\item If you have difficulties with the mathtime package, adjust the package
+options appropriately for your platform. If you can't get it to work, just
+remove the package or see our technical support document online (please
+refer to the author instructions).
+
+\item If you are using an appendix, it goes last, after the bibliography.
+Use regular section headings to make the appendix headings.
+
+\item If you are not using an appendix, you may delete the appendix command
+and sample appendix section heading.
+
+\item Either the natbib package or the harvard package may be used with bibtex.
+To include one of these packages, uncomment the appropriate usepackage command
+above. Note: you can't use both packages at once or compile-time errors will result.
+
+\end{itemize}
+
+
+Sample figure:
+
+\begin{figure}
+Figure here.
+
+\caption{Caption for figure below.}
+\begin{figurenotes}
+Figure notes without optional leadin.
+\end{figurenotes}
+\begin{figurenotes}[Source]
+Figure notes with optional leadin (Source, in this case).
+\end{figurenotes}
+\end{figure}
+
+Sample table:
+
+\begin{table}
+\caption{Caption for table above.}
+
+\begin{tabular}{lll}
+& Heading 1 & Heading 2 \\
+Row 1 & 1 & 2 \\
+Row 2 & 3 & 4%
+\end{tabular}
+\begin{tablenotes}
+Table notes environment without optional leadin.
+\end{tablenotes}
+\begin{tablenotes}[Source]
+Table notes environment with optional leadin (Source, in this case).
+\end{tablenotes}
+\end{table}
+
+# References
+
+
+
