@@ -1,9 +1,9 @@
-all: clean paper readme
+all: clean ps rs readme
 
 #CLEANING
 #remove any intermediate files
 clean:
-	rm -f README.md output/application.pdf output/application.doc
+	rm -f README.md output/*.pdf output/*.doc
 
 #Project README
 readme: README.Rmd
@@ -11,7 +11,11 @@ readme: README.Rmd
 
 #OUTPUT
 #Generate the paper
-paper: output/application.Rmd output/library.bib output/chicago-author-date.csl
+ps: output/personal_statement.Rmd output/library.bib output/chicago-author-date.csl
+	cd $(<D); R -e "rmarkdown::render('$(<F)', 'pdf_document')"
+	cd $(<D); R -e "rmarkdown::render('$(<F)', 'word_document')"
+
+rs: output/research_statement.Rmd output/library.bib output/chicago-author-date.csl
 	cd $(<D); R -e "rmarkdown::render('$(<F)', 'pdf_document')"
 	cd $(<D); R -e "rmarkdown::render('$(<F)', 'word_document')"
 
