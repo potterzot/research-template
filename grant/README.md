@@ -12,7 +12,7 @@ Nicholas Potter (<potterzot@gmail.com>)
 Contents
 --------
 
-This is the grant proposal for GRANT NAME.
+This is the repository for GRANT NAME.
 
 Licenses
 --------
