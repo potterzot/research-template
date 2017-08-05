@@ -9,22 +9,3 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Please outline your educational and professional development plans and career goals. How do you envision graduate school preparing you for a career that allows you to contribute to expanding scientific understanding as well as broadly benefit society? Page limit - 3 pages
-
-Describe your personal, educational and/or professional experiences that motivate your decision to pursue advanced study in science, technology, engineering or mathematics (STEM). Include specific examples of any research and/or professional activities in which you have participated. Present a concise description of the activities, highlight the results and discuss how these activities have prepared you to seek a graduate degree. Specify your role in the activity including the extent to which you worked independently and/or as part of a team. Describe the contributions of your activity to advancing knowledge in STEM fields as well as the potential for broader societal impacts (See Solicitation, Section VI, for more information about Broader Impacts).
-
-NSF Fellows are expected to become globally engaged knowledge experts and leaders who can contribute significantly to research, education, and innovations in science and engineering. The purpose of this statement is to demonstrate your potential to satisfy this requirement. Your ideas and examples do not have to be confined necessarily to the discipline that you have chosen to pursue.
-
-If you have completed more than 12 months of graduate or post-baccalaureate study or a professional degree and an interruption of at least two consecutive years (fourth option under Completed Study in the NSF GRFP Program Information section), please address the reasons for the interruption in graduate study here. Please refer back to that section for details.
-
-Important questions to ask yourself before writing the statement:
-
-* Why are you fascinated by your research area?
-* What examples of leadership skills and unique characteristics do you bring to your chosen field?
-* What personal and individual strengths do you have that make you a qualified applicant?
-* How will receiving the fellowship contribute to your career goals?
-* What are all of your applicable experiences?
-* For each experience, what were the key questions, methodology, findings, and conclusions?
-* Did you work in a team and/or independently?
-* How did you assist in the analysis of results?
-* How did your activities address the Intellectual Merit and Broader Impacts criteria?

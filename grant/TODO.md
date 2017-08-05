@@ -1,6 +1,6 @@
-# DEADLINE: October 26, 2017 5pm PST
+# DEADLINE:
 
-* [X] start online application 
+* [] start online application 
 * [] upload transcripts (UMASS, UNM, WSU)
 * [] add education/work experience (UMASS, UNM, WSU, NBER, PC)
 
@@ -9,11 +9,7 @@
 ## Research Statement
 
 ## Letters of Rec
-* [] Michael Brady
-* [] Hayley Chouinard
-* [] Phil Wandschneider
-* [] Chad Kruger
-* [] Kirti 
+* [] 
 
 ## Transcripts
 * [] Hampshire
