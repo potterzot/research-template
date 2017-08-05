@@ -11,7 +11,7 @@ readme: README.Rmd
 
 #OUTPUT
 #Generate the paper
-paper: output/application.Rmd output/library.bib output/chicago-author-date.csl
+paper: output/article.Rmd output/library.bib output/chicago-author-date.csl
 	cd $(<D); R -e "rmarkdown::render('$(<F)', 'pdf_document')"
 	cd $(<D); R -e "rmarkdown::render('$(<F)', 'word_document')"
 
