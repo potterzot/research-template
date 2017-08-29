@@ -12,7 +12,7 @@ output:
 
 ## Author(s)
 
-Nicholas Potter (potterzot@gmail.com)
+Nicholas Potter (nicholas.a.potter@wsu.edu)
 
 ## Contents
 

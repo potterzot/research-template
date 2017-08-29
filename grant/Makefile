@@ -3,7 +3,7 @@ all: clean ps rs readme
 #CLEANING
 #remove any intermediate files
 clean:
-	rm -f README.md output/*.pdf output/*.doc
+	rm -f README.md output/*.pdf output/*.docx
 
 #Project README
 readme: README.Rmd

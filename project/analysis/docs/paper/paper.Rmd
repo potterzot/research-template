@@ -1,0 +1,34 @@
+---
+title: "Agricultural Land Rents Reflect Climate Change Impacts"
+short: "Climage Change Impacts on Agriculture"
+journal: "AER" # AER, AEJ, PP, JEL
+month: "`r lubridate::month(Sys.time())`"
+year: "`r lubridate::year(Sys.time())`"
+vol: 1
+issue: 1
+jel:
+  - Q10
+  - Q54
+keywords:
+  - Climate
+  - Agriculture
+author:
+  - name: Nicholas A. Potter
+    firstname: Nicholas
+    surname: Potter
+    email: nicholas.a.potter@wsu.edu
+    affiliation: Washington State University
+    
+acknowledgements: |
+  "The author is grateful to ..."
+abstract: |
+"
+"
+output: rticles::aea_article
+numbersections: true
+link-citations: true
+pandocExtensions: tex_math_dollars
+bibliography: ../library.bib
+---
+
+# References
