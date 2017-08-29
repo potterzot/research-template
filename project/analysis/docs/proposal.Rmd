@@ -2,6 +2,9 @@
 title: "Research Proposal"
 author: "Nicholas Potter"
 date: "`r lubridate::date(Sys.time())`"
+link-citations: true
+pandocExtensions: tex_math_dollars
+bibliography: ../library.bib
 output: pdf_document
 ---
 
