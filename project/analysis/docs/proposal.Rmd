@@ -1,7 +1,7 @@
 ---
 title: "Research Proposal"
 author: "Nicholas Potter"
-date: "August 21, 2017"
+date: "`r lubridate::date(Sys.time())`"
 output: pdf_document
 ---
 
