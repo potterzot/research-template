@@ -13,13 +13,22 @@ install: doc
 	cd rpkg; R CMD check .
 	cd rpkg; R CMD INSTALL .
 
+#OUTPUT
+%.pdf: %.Rmd output/library.bib output/chicago-author-date.csl
+	cd $(<D) && R -e "rmarkdown::render('$(<F)', 'pdf_document')"
 
-#Project README
-readme: README.Rmd rpkg/README.Rmd
-	#R -e "knitr::knit('README.Rmd')"
-	R -e "rmarkdown::render('$(<F)')"
-	cd rpkg; R -e "rmarkdown::render('$(<F)')"
+%.html: %.Rmd output/library.bib output/chicago-author-date.csl output/style.css
+	R -e "rmarkdown::render('$(<F)', 'html_document')"
+
+%.md: %.Rmd output/library.bib output/chicago-author-date.csl
+	R -e "rmarkdown::render('$(<F)', 'md_document')"
 
 #Generate the paper
-paper: analysis/paper.Rmd analysis/library.bib analysis/chicago-author-date.csl
+readme: README.md
+#plan: output/research_plan.pdf output/research_plan.md
+proposal: output/proposal.pdf output/proposal.Rmd
+paper: output/paper/paper.pdf output/paper/paper.Rmd output/library.bib output/chicago-author-date.csl
+
+#Generate the paper
+paper: output/paper/paper.Rmd output/library.bib output/chicago-author-date.csl
 	cd $(<D); R -e "rmarkdown::render('$(<F)', 'all')"
