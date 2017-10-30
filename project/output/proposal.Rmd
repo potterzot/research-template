@@ -1,7 +1,8 @@
 ---
-title: "Research Proposal"
+title: ""
+subtitle: "A Research Proposal"
 author: "Nicholas Potter"
-date: "`r format(lubridate::date(Sys.time()), '%B %d, %Y')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 link-citations: true
 pandocExtensions: tex_math_dollars
 bibliography: library.bib
