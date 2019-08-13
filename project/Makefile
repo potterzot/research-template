@@ -1,12 +1,12 @@
 all: clean_all data doc test paper readme
 
-%.pdf: %.Rmd output/library.bib
+%.pdf: %.Rmd outputs/library.bib
 	cd $(<D); R -e "rmarkdown::render('$(<F)', 'pdf_document')"
 
-%.md: %.Rmd output/library.bib
-	cd $(<D); R -e "rmarkdown::render('$(<F)', 'markdown_document')"
+%.md: %.Rmd outputs/library.bib
+	cd $(<D); R -e "rmarkdown::render('$(<F)', 'md_document')"
 
-%.html: %.Rmd output/library.bib
+%.html: %.Rmd outputs/library.bib
 	cd $(<D); R -e "rmarkdown::render('$(<F)', 'html_document')"
 
 ### CLEANING
