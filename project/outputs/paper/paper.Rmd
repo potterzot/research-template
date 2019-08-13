@@ -22,8 +22,7 @@ author:
 acknowledgements: |
   "The author is grateful to ..."
 abstract: |
-"
-"
+  "Test"
 output: rticles::aea_article
 numbersections: true
 link-citations: true

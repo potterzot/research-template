@@ -28,7 +28,6 @@ soil: get_data proc_data
 
 ## All Data combined
 
-
 ###### R PACKAGE
 
 doc: $(wildcard rpkg/R/*.R)
@@ -41,8 +40,6 @@ install:
 
 ##### OUTPUT
 
-readme: README.md
-
 #Generate the paper
 presentation: output/pre-presentation/half-baked.html
 output/pre-presentation/half-baked.html: output/pre-presentation/half-baked.Rmd
@@ -54,3 +51,22 @@ output/paper/paper.pdf: output/paper/paper.Rmd output/library.bib
 	cd $(<D); R -e "rmarkdown::render('$(<F)', 'word_document')"
 	cd $(<D); R -e "researchTools::find_weasels('$(<F)', outfile='weasels.txt')"
 
+%.html: %.Rmd output/library.bib output/chicago-author-date.csl output/style.css
+	R -e "rmarkdown::render('$(<F)', 'html_document')"
+
+%.md: %.Rmd output/library.bib output/chicago-author-date.csl
+	R -e "rmarkdown::render('$(<F)', 'md_document')"
+
+#OUTPUT
+%.pdf: %.Rmd output/library.bib output/chicago-author-date.csl
+	cd $(<D) && R -e "rmarkdown::render('$(<F)', 'pdf_document')"
+
+#Generate the paper
+readme: README.md
+#plan: output/research_plan.pdf output/research_plan.md
+proposal: output/proposal.pdf output/proposal.Rmd
+paper: output/paper/paper.pdf output/paper/paper.Rmd output/library.bib output/chicago-author-date.csl
+
+#Generate the paper
+paper: output/paper/paper.Rmd output/library.bib output/chicago-author-date.csl
+	cd $(<D); R -e "rmarkdown::render('$(<F)', 'all')"
